@@ -1,0 +1,86 @@
+body {
+  background-image: url(https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#weather {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.container {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255, 0.6);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+#title {
+  background-color: cornflowerblue;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: monospace;
+  border-radius: 15px;
+}
+#icon {
+  display: flex;
+  justify-content: center;
+  animation: icon 3s linear infinite alternate;
+}
+@keyframes icon {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.4);
+  }
+}
+.info {
+  text-align: center;
+}
+input,
+button {
+  width: 100%;
+}
+button {
+  background-color: cornflowerblue;
+  color: white;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: monospace;
+  border: 2px cornflowerblue;
+  transition: all 0.5s;
+}
+
+button:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+input {
+  height: 40px;
+  font-family: monospace;
+  font-size: 20px;
+}
+#f1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#f1 div {
+  margin: 15px 20px 15px 20px;
+}
+#f1 div:hover {
+  transform: scale(1.08);
+  transition: 0.4s;
+}
+#f2 {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
